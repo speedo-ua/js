@@ -127,7 +127,7 @@
 
 // let arr = [1,2,55,3,100, 333, 9999];
 
-// function funcName(value) {
+// function countNumber(value) {
 //         let num2=0; num3=0; num4=0;
 
 //         value.forEach(element => {
@@ -144,7 +144,7 @@
 //         return countValue;
 // }
 
-// let arrNew = funcName(arr);
+// let arrNew = countNumber(arr);
 // console.log(arrNew);
 
 
@@ -164,7 +164,7 @@
 
 // let  arr = [5, "Limit", 12, "a", "3", 99, 2, [2, 4, 3, "33", "a", "text"], "strong", "broun"];
 
-// function funcName(value) {
+// function sortArr(value) {
 //     let arrNum = []; arrNum2 = []; 
 
 //     value.flat().forEach(element => {
@@ -179,7 +179,7 @@
 //     return arrRes;
 // }
 
-// let arrNew = funcName(arr);
+// let arrNew = sortArr(arr);
 // console.log (arrNew);
 
 
@@ -243,7 +243,7 @@
 
 // let arr = [5, 2, 4, 7, 0, 8, 9, 10];
 
-// function funcName(elem) {
+// function sortArr(elem) {
 //     let arrOdd=[];
 //     let arrEven=[];
 //     let arrSum = [];
@@ -272,7 +272,7 @@
 // return arrSum;
 // };
 
-// let arr2 = funcName(arr);
+// let arr2 = sortArr(arr);
 // console.log (arr2);
 
 
@@ -339,15 +339,14 @@ const login = " artEm ";
 const password = "Shcherbyna";
 
 function check (argLogin, argPassword) {
-                let arr = [" artEm ", "Shcherbyna"]
+                let arr = [" artEm ", "Shcherbyna"];
                    
                 if (arr[0]==argLogin && arr[1]==argPassword){
-                    return alert('Ви авторізовані')
-                }else return alert('Логін або Пароль не вірний')  
-
+                    return alert('Ви авторізовані');
+                } else return alert('Логін або Пароль не вірний');  
                  
                 };
-check(login, password)
+check(login, password);
 
 
 
