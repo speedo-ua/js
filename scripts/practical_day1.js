@@ -277,16 +277,77 @@
 
 
 // ===================== 9 ===========================
-// Напишіть функцію яка приймає 2 аргументи, ім’я та прізвище, та повертає як результат ЦІЛУ строку ім`я та прізвище. Додати додатково третій параметр - функцію яка буде переводити у певний регістр цю строку, верхній, нижній або кожне слово із великої літери(це три окремі функції мають бути) а також видаляє зайві пробели
+// Напишіть функцію яка приймає 2 аргументи, ім’я та прізвище, 
+// та повертає як результат ЦІЛУ строку ім`я та прізвище. 
+// Додати додатково третій параметр - функцію яка буде переводити 
+// у певний регістр цю строку, верхній, нижній або кожне слово 
+// із великої літери(це три окремі функції мають бути) 
+// а також видаляє зайві пробели
 // ----------------------------------------------------
 
+// const nameValue = " artEm ";
+// const surnameValue = "Shcherbyna";
 
+// let concatName = function (argName, argSurname, foo) {
+//                  let arr = [];
+//                     arr=[argName.trim(), argSurname.trim()];   
+//                     arr = foo(arr);
+//                  let res = arr.join(' ');
+//                  return res;
+//                 };
 
+// let upperFirst = function (arr){
+//                 let argName = arr[0];
+//                 let argSurname = arr[1];
+//                     argName = argName.toLowerCase();
+//                     argSurname = argSurname.toLowerCase();
+//                     argName = argName[0].toUpperCase()+argName.slice(1);
+//                     argSurname = argSurname[0].toUpperCase()+argSurname.slice(1);
+//                     res = [argName, argSurname];
+//                 return res;
+//                 };
+
+// let upperAll = function (arr){
+//                 let argName = arr[0];
+//                 let argSurname = arr[1];
+//                     argName = argName.toUpperCase();
+//                     argSurname = argSurname.toUpperCase();
+//                     res = [argName, argSurname];
+//                 return res;
+//                 };
+
+// let lowerAll = function (arr){
+//                     let argName = arr[0];
+//                     let argSurname = arr[1];
+//                         argName = argName.toLowerCase();
+//                         argSurname = argSurname.toLowerCase();
+//                         res = [argName, argSurname];
+//                     return res;
+//                         };
+                    
+// console.log (concatName(nameValue,surnameValue, upperFirst));
 
 
 // ===================== 10 ===========================
-// Створити функцію яка приймає 2 аргументи (логін, пароль). Функція має перевіряти введені дані на наявність таких даних в масиві який є всередині цієї функції. якщо логін та пароль співпадають із даними які є в масиві тоді вивести повідомлення Ви авторизовані, інакше вивести — Логін або Пароль не вірний.
+// Створити функцію яка приймає 2 аргументи (логін, пароль). 
+// Функція має перевіряти введені дані на наявність таких даних в масиві 
+// який є всередині цієї функції. якщо логін та пароль співпадають із даними які є в масиві 
+// тоді вивести повідомлення Ви авторизовані, інакше вивести — Логін або Пароль не вірний.
 // ----------------------------------------------------
+
+const login = " artEm ";
+const password = "Shcherbyna";
+
+function check (argLogin, argPassword) {
+                let arr = [" artEm ", "Shcherbyna"]
+                   
+                if (arr[0]==argLogin && arr[1]==argPassword){
+                    return alert('Ви авторізовані')
+                }else return alert('Логін або Пароль не вірний')  
+
+                 
+                };
+check(login, password)
 
 
 
