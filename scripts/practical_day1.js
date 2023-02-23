@@ -277,10 +277,55 @@
 
 
 // ===================== 9 ===========================
-// Напишіть функцію яка приймає 2 аргументи, ім’я та прізвище, та повертає як результат ЦІЛУ строку ім`я та прізвище. Додати додатково третій параметр - функцію яка буде переводити у певний регістр цю строку, верхній, нижній або кожне слово із великої літери(це три окремі функції мають бути) а також видаляє зайві пробели
+// Напишіть функцію яка приймає 2 аргументи, ім’я та прізвище, 
+// та повертає як результат ЦІЛУ строку ім`я та прізвище. 
+// Додати додатково третій параметр - функцію яка буде переводити 
+// у певний регістр цю строку, верхній, нижній або кожне слово 
+// із великої літери(це три окремі функції мають бути) 
+// а також видаляє зайві пробели
 // ----------------------------------------------------
 
+const nameValue = " artEm ";
+const surnameValue = "Shcherbyna";
 
+let concatName = function (argName, argSurname, foo) {
+                 let arr = [];
+                    arr=[argName.trim(), argSurname.trim()];   
+                    arr = foo(arr);
+                 let res = arr.join(' ');
+                 return res;
+                };
+
+let upperFirst = function (arr){
+                let argName = arr[0];
+                let argSurname = arr[1];
+                    argName = argName.toLowerCase();
+                    argSurname = argSurname.toLowerCase();
+                    argName = argName[0].toUpperCase()+argName.slice(1);
+                    argSurname = argSurname[0].toUpperCase()+argSurname.slice(1);
+                    res = [argName, argSurname];
+                return res;
+                };
+
+let upperAll = function (arr){
+                let argName = arr[0];
+                let argSurname = arr[1];
+                    argName = argName.toUpperCase();
+                    argSurname = argSurname.toUpperCase();
+                    res = [argName, argSurname];
+                return res;
+                };
+
+let lowerAll = function (arr){
+                    let argName = arr[0];
+                    let argSurname = arr[1];
+                        argName = argName.toLowerCase();
+                        argSurname = argSurname.toLowerCase();
+                        res = [argName, argSurname];
+                    return res;
+                        };
+                    
+console.log (concatName(nameValue,surnameValue, upperFirst));
 
 
 
