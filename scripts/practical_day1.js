@@ -335,18 +335,18 @@
 // тоді вивести повідомлення Ви авторизовані, інакше вивести — Логін або Пароль не вірний.
 // ----------------------------------------------------
 
-const login = " artEm ";
-const password = "Shcherbyna";
+// const login = " artEm ";
+// const password = "Shcherbyna";
 
-function check (argLogin, argPassword) {
-                let arr = [" artEm ", "Shcherbyna"];
+// function check (argLogin, argPassword) {
+//                 let arr = [" artEm ", "Shcherbyna"];
                    
-                if (arr[0]==argLogin && arr[1]==argPassword){
-                    return alert('Ви авторізовані');
-                } else return alert('Логін або Пароль не вірний');  
+//                 if (arr[0]==argLogin && arr[1]==argPassword){
+//                     return alert('Ви авторізовані');
+//                 } else return alert('Логін або Пароль не вірний');  
                  
-                };
-check(login, password);
+//                 };
+// check(login, password);
 
 
 
