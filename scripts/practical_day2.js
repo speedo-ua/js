@@ -69,3 +69,76 @@
 // const stud1 = new Student("Petro", "Petrenko", 2019);
 // console.log(stud1.showFullName("Petrovych")); // Petrenko Petro Petrovych
 // console.log("Current course:" + stud1.showCourse()); //Current course: 4
+
+// 4)================================
+
+
+class GeometricFigure {
+    constructor (){
+    };
+
+    getArea(){
+        return 0
+    };
+   
+    toString(){
+        return Object.getPrototypeOf(this).constructor.name;
+    };   
+
+}
+
+class Traingle extends GeometricFigure {
+    constructor(sideA, sideB, sideC){
+        super();
+        this.sideA=sideA;
+        this.sideB=sideB;
+        this.sideC=sideC;
+    };
+
+    getArea(){
+        let p = (this.sideA+this.sideB+this.sideC)/2;
+        return Math.sqrt(p*(p-this.sideA)*(p-this.sideB)*(p-this.sideC));
+    };  
+};
+
+class Square extends GeometricFigure {
+    constructor(sideA, sideB){
+        super();
+        this.sideA=sideA;
+        this.sideB=sideB;
+    };
+
+    getArea(){
+        return this.sideA*this.sideB;
+    } ;   
+};
+
+class Circle extends GeometricFigure {
+    constructor(radius){
+        super();
+        this.radius=radius;
+    };
+
+    getArea(){
+        return Math.PI * Math.pow (this.radius, 2);
+    } ;
+};
+
+const figures = [new Traingle (5, 6, 7), new Square (5, 6), new Circle (5)];
+
+function handleFigures(arr){
+    let sum = 0;
+    arr.forEach(element => {
+        if (element instanceof GeometricFigure ){
+            let classArea = element.getArea();
+            let className = element.toString();
+            sum += classArea;
+            console.log('Geometric figure: ' + className + ' - area: ' + classArea);
+        };
+    }); 
+    console.log ('total area: ' + sum);
+}
+
+console.log (handleFigures(figures));
+
+
