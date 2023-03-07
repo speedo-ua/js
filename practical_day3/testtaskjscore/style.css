@@ -1,0 +1,48 @@
+.container{
+  border: 1px solid black;
+  width: 400px;
+  height: 50px;
+}
+.btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: green;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(1, 93, 15);
+}
+
+
+.block{
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.759), rgb(255, 0, 0))
+}
+
+.imghidden {
+  width: 401px;
+  margin-bottom: 10px;
+  visibility: hidden;
+  display: block;
+} 
+
+.imgvisible {
+  width: 401px;
+  margin-bottom: 10px;
+  display: block;
+  animation-name: Appearance;
+  animation-duration: 5s;
+}
+
+
+@keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
