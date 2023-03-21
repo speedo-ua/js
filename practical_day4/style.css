@@ -1,0 +1,110 @@
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+form{
+    width: 300px;
+    height: 500px;
+    padding-left: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 40px;
+}
+
+
+.text-label {
+    display: block;
+    position: absolute;
+    transform: translateY(15%) translateX(15px);
+    border: none;
+    background-color:white;
+    color:rgb(55, 55, 55);
+}
+
+
+.text-field {
+    position:static;
+    border-radius: 60px; 
+    height: 40px; 
+    width: 215px;
+    border: 3px solid rgb(55, 55, 55);
+    margin: 10px 0px 10px 0px;
+    background-color: rgb(250, 248, 248);
+    font-size: 18px;
+    padding-left: 10px; 
+    padding-right: 45px;
+
+}
+
+.text-field:focus {
+    border-color: white;
+    background-color: rgb(255, 255, 255);
+ 
+}
+
+input#tel{
+    background-image: url(https://www.flaticon.com/svg/vstatic/svg/8034/8034619.svg?token=exp=1679407919~hmac=541c3f736b45b4bbbde391610739fe7f); 
+    background-size: 33px;
+    background-repeat: no-repeat;
+    background-position: 230px;
+}
+
+input#email{
+    background-image: url(https://www.flaticon.com/svg/vstatic/svg/8034/8034034.svg?token=exp=1679408764~hmac=47dca3519a0f2190e5b4b08bde5e7fec); 
+    background-size: 33px;
+    background-repeat: no-repeat;
+    background-position: 230px;
+}
+
+input#fname{
+    background-image: url(https://www.flaticon.com/svg/vstatic/svg/6275/6275774.svg?token=exp=1679408619~hmac=adb70e3c29662f1b4875ac54d39df620); 
+    background-size: 33px;
+    background-repeat: no-repeat;
+    background-position: 230px;
+}
+
+input#password{
+    background-image: url(https://cdn-icons.flaticon.com/svg/3917/3917606.svg?token=exp=1679409186~hmac=4ef5e2b1f451857589b61f33f5a71e75); 
+    background-size: 33px;
+    background-repeat: no-repeat;
+    background-position: 230px;
+}
+
+input#cpassword{
+    background-image: url(https://cdn-icons.flaticon.com/svg/3917/3917591.svg?token=exp=1679409186~hmac=4a1ab6c172d4cfca2f12ed6cbd517ded); 
+    background-size: 33px;
+    background-repeat: no-repeat;
+    background-position: 230px;
+}
+
+h1{
+    display: block;
+    padding: 10px 0px 0px 23px;
+}
+
+.submit{
+    background-color: rgb(26, 26, 174);
+    border: none;
+    border-radius: 60px; 
+    height: 50px; 
+    width: 270px;
+    margin: 10px 0px 10px 0px;
+    color: white;
+    font-size: 18px;
+}
+
+.submit:active{
+    background-color: rgb(8, 8, 111);
+}
+
+.checkbox {
+    /* display: block; */
+}
+
+p {
+    width: 300px;
+    margin: 40px;
+    color: red;
+    font-weight: bold;
+}
+
