@@ -1,20 +1,18 @@
 // 1) ===============
 
-// const { get } = require("jquery");
+let body_1 = document.querySelector ('body');
+let btn_1 = document.createElement ('button');
+let text_1 = document.createElement('h1');
+body_1.append(text_1, btn_1);
+btn_1.textContent = 'mouse';
 
-// let body = document.querySelector ('body');
-// let btn = document.createElement ('button');
-// let text = document.createElement('h1');
-// body.append(text, btn);
-// btn.textContent = 'mouse';
+btn_1.addEventListener ("mouseover", ()=>{
+        text_1.textContent = 'I was pressed!';
+})
 
-// btn.addEventListener ("mouseover", ()=>{
-//         text.textContent = 'I was pressed!';
-// })
-
-// btn.addEventListener ('mouseleave', ()=>{
-//     text.textContent = 'Mouse is not on me!';
-// })
+btn_1.addEventListener ('mouseleave', ()=>{
+    text_1.textContent = 'Mouse is not on me!';
+})
 
 
 // 2) На сторінці потрібно реалізувати 2 випадаючих списки. У першому містяться назви країн, у другому – назви міст. Реалізувати роботу таким чином, щоб коли вибирається з лівого випадаючого списку певна країна - в правому випадаючому  списку з'являлися міста цієї країни. Список міст формується динамічно, через JavaScript. Також потрібно нижче вивести назву обраної країни і місто. 
